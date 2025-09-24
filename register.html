@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="register.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>User Registration</h2>
+    <form action="register.php" method="POST" id="registrationForm">
+      <label>Full Name</label>
+      <input type="text" name="fullname" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Username</label>
+      <input type="text" name="username" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" name="confirm_password" required>
+
+      <label>Gender</label>
+      <input type="radio" name="gender" value="Male" required> Male
+      <input type="radio" name="gender" value="Female"> Female
+
+      <label>Hobbies</label>
+      <input type="checkbox" name="hobbies[]" value="Reading"> Reading
+      <input type="checkbox" name="hobbies[]" value="Sports"> Sports
+      <input type="checkbox" name="hobbies[]" value="Music"> Music
+
+      <label>Country</label>
+      <select name="country" required>
+        <option value="">--Select--</option>
+        <option value="Philippines">Philippines</option>
+        <option value="USA">USA</option>
+        <option value="Japan">Japan</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+    <p>Already registered? <a href="login.html">Login here</a></p>
+  </div>
+</body>
+</html>
